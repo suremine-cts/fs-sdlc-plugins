@@ -15,7 +15,7 @@ metadata:
     flowsource/durationInDays: "90"    
     
     # For Jenkins plugin    
-    # flowsource/jenkins-pipelines: customer-portal-service/main   
+    # flowsource/jenkins-pipelines: fs-sdlc/main   
 
 spec:
   type: backstage-frontend-plugin
