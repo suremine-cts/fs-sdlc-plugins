@@ -5,6 +5,7 @@ metadata:
   name: sdlc-plugins
   title: SDLC
   description: SDLC plugin for Flowsource
+  appid: sdlc-plugins
   annotations:
     # For GitHub plugin    
     flowsource/github-repo-owner: suremine-cts    
