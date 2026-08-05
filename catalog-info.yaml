@@ -1,59 +1,24 @@
-# catalog-info.yaml
-#
-# Registers the Jira plugin in the Flowsource (Backstage-based) software catalog.
-#
-# This file has two parts:
-#   1. A Component entity for the plugin itself, so it shows up in the
-#      catalog and can be discovered/owned like any other piece of software.
-#   2. Commented-out annotations you add to ANY OTHER entity (a service,
-#      website, etc.) to light up the Jira tab on that entity's page.
-#
-# Replace every <PLACEHOLDER> before applying.
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
+
 metadata:
-  name: jira-plugin
-  title: Jira Plugin
-  description: Flowsource plugin that surfaces Jira projects, issues, and activity on entity pages.
+  name: sdlc-plugins
+  title: SDLC
+  description: SDLC plugin for Flowsource
   annotations:
-    # --- Required: tells the Jira plugin which project/board to pull data from ---
-    jira/project-key: <JIRA_PROJECT_KEY>          # e.g. FLOW
-    jira/component: <JIRA_COMPONENT_NAME>          # optional: filter by Jira "Component" field
+    # For GitHub plugin    
+    flowsource/github-repo-owner: suremine-cts    
+    flowsource/github-repo-name: fs-sdlc-plugins    
+    
+    # For JIRA plugin    
+    flowsource/jira-project-key: ISGFS    
+    flowsource/durationInDays: "90"    
+    
+    # For Jenkins plugin    
+    # flowsource/jenkins-pipelines: customer-portal-service/main   
 
-    # --- Optional: only needed if you run multiple Jira instances ---
-    jira/instance: <JIRA_INSTANCE_NAME>            # matches the instance key in app-config.yaml -> jira.instances
-
-    # --- Optional: link back to source that owns/produces this plugin ---
-    backstage.io/source-location: url:<REPO_URL>
-  tags:
-    - jira
-    - plugin
-    - flowsource
-  links:
-    - url: <JIRA_BASE_URL>/browse/<JIRA_PROJECT_KEY>
-      title: Jira Project
-      icon: dashboard
 spec:
-  type: plugin
-  lifecycle: production
-  owner: <TEAM_OR_GROUP>          # e.g. group:default/platform-team
+  type: backstage-frontend-plugin
+  lifecycle: experimental
+  owner: group:default/platform-team
   system: flowsource
-
----
-# Example: annotating an existing service so the Jira tab appears on ITS page.
-# Copy this block into that service's own catalog-info.yaml (do not duplicate
-# the Component above) and fill in the placeholders.
-#
-# apiVersion: backstage.io/v1alpha1
-# kind: Component
-# metadata:
-#   name: <YOUR_SERVICE_NAME>
-#   annotations:
-#     jira/project-key: <JIRA_PROJECT_KEY>
-#     jira/component: <JIRA_COMPONENT_NAME>   # optional
-#     jira/instance: <JIRA_INSTANCE_NAME>     # optional, multi-instance setups only
-# spec:
-#   type: service
-#   lifecycle: production
-#   owner: <TEAM_OR_GROUP>
