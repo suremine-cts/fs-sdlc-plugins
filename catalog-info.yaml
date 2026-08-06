@@ -1,25 +1,32 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
-
 metadata:
   name: sdlc-plugins
   title: SDLC
   description: SDLC plugin for Flowsource
-  appid: sdlc-plugins
   annotations:
-    # For GitHub plugin    
-    flowsource/github-repo-owner: suremine-cts    
-    flowsource/github-repo-name: fs-sdlc-plugins
-    
-    # For JIRA plugin    
-    flowsource/jira-project-key: ISGFS    
-    flowsource/durationInDays: '90'    
-    
-    # For Jenkins plugin    
-    # flowsource/jenkins-pipelines: fs-sdlc/main   
+    # For GitHub plugin
+    github.com/project-slug: cts-suresh/flowsource-git-1
+    flowsource/github-repo-owner: cts-suresh
+    flowsource/github-repo-name: flowsource-git-1
 
+    # For JIRA plugin
+    flowsource/jira-project-key: ISGFS
+    flowsource/durationInDays: '90'
+
+    # For Jenkins plugin
+    # flowsource/jenkins-pipelines: fs-sdlc/main
+  tags:
+    - github
+    - jira
+    - jenkins
+    - flowsource
+  links:
+    - url: https://github.com/cts-suresh/flowsource-git-1
+      title: GitHub Repo
+      icon: github
 spec:
-  type: backstage-frontend-plugin
+  type: service
   lifecycle: experimental
   owner: group:default/platform-team
   system: flowsource
