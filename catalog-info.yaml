@@ -10,10 +10,9 @@ metadata:
     # For GitHub plugin    
     flowsource/github-repo-owner: suremine-cts    
     flowsource/github-repo-name: fs-sdlc-plugins
-    flowsource/github-host: github.com
     
     # For JIRA plugin    
-    flowsource/jira-project-key: 'ISGFS'    
+    flowsource/jira-project-key: ISGFS    
     flowsource/durationInDays: '90'    
     
     # For Jenkins plugin    
