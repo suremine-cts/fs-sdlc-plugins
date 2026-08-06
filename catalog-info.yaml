@@ -8,7 +8,7 @@ metadata:
   appid: sdlc-plugins
   annotations:
     # For GitHub plugin    
-    # flowsource/github-repo-owner: suremine-cts    
+    flowsource/github-repo-owner: suremine-cts    
     # flowsource/github-repo-name: fs-sdlc-plugins    
     
     # For JIRA plugin    
