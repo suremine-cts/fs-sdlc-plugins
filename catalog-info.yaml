@@ -8,12 +8,12 @@ metadata:
   appid: sdlc-plugins
   annotations:
     # For GitHub plugin    
-    flowsource/github-repo-owner: suremine-cts    
-    flowsource/github-repo-name: fs-sdlc-plugins    
+    # flowsource/github-repo-owner: suremine-cts    
+    # flowsource/github-repo-name: fs-sdlc-plugins    
     
     # For JIRA plugin    
-    flowsource/jira-project-key: ISGFS    
-    flowsource/durationInDays: "90"    
+    # flowsource/jira-project-key: ISGFS    
+    # flowsource/durationInDays: "90"    
     
     # For Jenkins plugin    
     # flowsource/jenkins-pipelines: fs-sdlc/main   
