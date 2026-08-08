@@ -13,6 +13,7 @@ metadata:
     # For JIRA plugin
     flowsource/jira-project-key: SCRUM
     flowsource/durationInDays: '90'
+    flowsource/jira-storypoint-field: '#notapplicable'
 
     # For Jenkins plugin
     # flowsource/jenkins-pipelines: fs-sdlc/main
