@@ -11,7 +11,7 @@ metadata:
     flowsource/github-repo-name: fs-sdlc-plugins
 
     # For JIRA plugin
-    flowsource/jira-project-key: 'ISGFS'
+    flowsource/jira-project-key: SCRUM
     flowsource/durationInDays: '90'
 
     # For Jenkins plugin
