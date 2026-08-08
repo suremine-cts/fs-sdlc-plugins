@@ -6,12 +6,12 @@ metadata:
   description: SDLC plugin for Flowsource
   annotations:
     # For GitHub plugin
-    github.com/project-slug: cts-suresh/flowsource-git-1
+    github.com/project-slug: cts-suresh/fs-sdlc-plugins
     flowsource/github-repo-owner: cts-suresh
-    flowsource/github-repo-name: flowsource-git-1
+    flowsource/github-repo-name: fs-sdlc-plugins
 
     # For JIRA plugin
-    flowsource/jira-project-key: ISGFS
+    flowsource/jira-project-key: 'ISGFS'
     flowsource/durationInDays: '90'
 
     # For Jenkins plugin
