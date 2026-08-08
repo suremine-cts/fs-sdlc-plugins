@@ -22,9 +22,12 @@ metadata:
     - jenkins
     - flowsource
   links:
-    - url: https://github.com/cts-suresh/flowsource-git-1
+    - url: https://github.com/cts-suresh/fs-sdlc-plugins
       title: GitHub Repo
       icon: github
+    - url: https://suremine.atlassian.net/browse/SCRUM
+      title: Jira Project
+      icon: dashboard
 spec:
   type: service
   lifecycle: experimental
