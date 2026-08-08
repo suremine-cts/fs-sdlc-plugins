@@ -6,8 +6,8 @@ metadata:
   description: SDLC plugin for Flowsource
   annotations:
     # For GitHub plugin
-    github.com/project-slug: cts-suresh/fs-sdlc-plugins
-    flowsource/github-repo-owner: cts-suresh
+    github.com/project-slug: suremine-cts/fs-sdlc-plugins
+    flowsource/github-repo-owner: suremine-cts
     flowsource/github-repo-name: fs-sdlc-plugins
 
     # For JIRA plugin
