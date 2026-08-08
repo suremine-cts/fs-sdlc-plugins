@@ -11,11 +11,11 @@ metadata:
     flowsource/github-repo-name: fs-sdlc-plugins
 
     # For JIRA plugin
-    jira/project-key: SCRUM
+    # jira/project-key: SCRUM
     
-    # flowsource/jira-project-key: SCRUM
-    # flowsource/durationInDays: '90'
-    # flowsource/jira-storypoint-field: '#notapplicable'
+    flowsource/jira-project-key: SCRUM
+    flowsource/durationInDays: '90'
+    flowsource/jira-storypoint-field: '#notapplicable'
 
     # For Jenkins plugin
     # flowsource/jenkins-pipelines: fs-sdlc/main
